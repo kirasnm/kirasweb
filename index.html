@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Nieto Moyano - Director de Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray-blue background */
+            color: #1a202c; /* Dark gray text */
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #4A90E2 0%, #50E3C2 100%); /* Gradient from blue to teal */
+        }
+        .section-title {
+            color: #2c5282; /* Darker blue for titles */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* 12px */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .tag {
+            background-color: #e2e8f0; /* Light gray for tags */
+            color: #4a5568; /* Medium gray text for tags */
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px; /* Pill shape */
+            font-size: 0.875rem; /* 14px */
+            font-weight: 600;
+        }
+        .icon-placeholder { /* Simple circle for icon/image placeholder */
+            width: 150px;
+            height: 150px;
+            background-color: #cbd5e0; /* Lighter gray */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #718096; /* Medium gray */
+            margin: 0 auto;
+        }
+        /* Custom scrollbar for a more modern look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0f4f8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4A90E2;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #357ABD;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section text-white py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <div class="icon-placeholder mb-8">
+            <img src="http://sergio-nm.com/yoii.png"> </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Sergio Nieto Moyano</h1>
+            <p class="text-xl md:text-2xl font-light mb-2">Director de Marketing</p>
+            <p class="text-lg md:text-xl font-light max-w-3xl mx-auto">
+                Con experiencia destacada en Inteligencia Artificial aplicada al Marketing para impulsar estrategias innovadoras y resultados medibles.
+            </p>
+            
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-16">
+        <section id="experiencia" class="mb-16">
+            <h2 class="text-3xl font-bold section-title mb-8 text-center">Experiencia en IA Aplicada al Marketing</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Investigación y Análisis de Mercado con IA</h3>
+                    <p class="text-gray-600 mb-4">
+                        Utilización avanzada de herramientas como Google Advanced, ChatGPT, DeepSeek y soluciones de Microsoft para realizar análisis de mercado profundos y estratégicos.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                        <li>Ejecución de estudios específicos sobre empresas del sector de viajes de lujo, analizando competidores y sus estrategias en redes sociales.</li>
+                        <li>Investigaciones clave sobre empresas internacionales.</li>
+                        <li>Obtención de insights críticos para evaluar la viabilidad y potencial de proyectos.</li>
+                    </ul>
+                    <span class="tag">Análisis de Mercado</span> <span class="tag">IA Estratégica</span>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Definición y Propuesta de Proyectos Estratégicos</h3>
+                    <p class="text-gray-600 mb-4">
+                        Habilidad para conceptualizar, definir y estructurar proyectos innovadores desde la fase inicial hasta la propuesta final. Esta competencia se ha consolidado a través del liderazgo en el desarrollo de una nueva iniciativa estratégica interna para la empresa.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                        <li>Análisis de viabilidad y definición de objetivos medibles (KPIs).</li>
+                        <li>Diseño de la propuesta de valor y planificación de las fases del proyecto.</li>
+                        <li>Elaboración de la documentación estratégica para su presentación y aprobación.</li>
+                    </ul>
+                    <span class="tag">Gestión de Proyectos</span> <span class="tag">Innovación</span> <span class="tag">Estrategia</span>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Marketing Digital y Creación Automatizada de Contenidos</h3>
+                    <p class="text-gray-600 mb-4">
+                        Implementación de inteligencia artificial para automatizar y personalizar la creación de contenidos, adaptados a las necesidades específicas de la empresa y manteniendo a la vanguardia tecnológica.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                        <li>Aplicación de análisis predictivo y personalización en estrategias digitales.</li>
+                        <li>Incremento del compromiso (engagement) y mejora de la experiencia del cliente.</li>
+                    </ul>
+                    <span class="tag">Marketing Digital</span> <span class="tag">Automatización</span> <span class="tag">IA Creativa</span>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Optimización de Procesos Internos mediante IA</h3>
+                    <p class="text-gray-600 mb-4">
+                        Organización y estructuración eficiente de información interna mediante IA, facilitando la gestión, planificación y orientación estratégica de proyectos.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                        <li>Uso constante de herramientas de inteligencia artificial para mejorar la productividad y efectividad en procesos operativos y creativos.</li>
+                    </ul>
+                    <span class="tag">Optimización de Procesos</span> <span class="tag">Productividad</span> <span class="tag">Gestión IA</span>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Creación Audiovisual y Gestión de Contenidos Multimedia</h3>
+                    <p class="text-gray-600 mb-4">
+                        Integración sistemática de IA para facilitar el proceso creativo y técnico en la producción y edición de contenidos audiovisuales para YouTube, optimizando tanto la calidad como el rendimiento del contenido producido.
+                    </p>
+                    <span class="tag">Contenido Multimedia</span> <span class="tag">Producción Audiovisual</span> <span class="tag">YouTube</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="text-center py-12 bg-white rounded-lg shadow-lg">
+             <h2 class="text-3xl font-bold section-title mb-6">¿Hablamos?</h2>
+             <p class="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
+                 Si estás buscando innovar en tus estrategias de marketing con IA o tienes algún proyecto en mente, no dudes en contactarme.
+             </p>
+             <a href="mailto:sergionietomoyano@gmail.com" 
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
+                 Contactar por Email Poseo Certificado de discapacidad
+             </a>
+             <p class="mt-6 text-sm text-gray-500">
+                sergionietomoyano@gmail.com
+             </p>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="year"></span> Sergio Nieto Moyano. Todos los derechos reservados.</p>
+            
+        </div>
+    </footer>
+
+    <script>
+        // Script para el año actual en el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
