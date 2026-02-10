@@ -23,6 +23,9 @@
             border-radius: 0.75rem; /* 12px */
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card:hover {
             transform: translateY(-5px);
@@ -35,25 +38,25 @@
             font-size: 0.875rem; /* 14px */
             font-weight: 600;
         }
-        .icon-placeholder { /* Simple circle for icon/image placeholder */
-            width: 150px;
-            height: 150px;
-            background-color: #cbd5e0; /* Lighter gray */
+        .icon-placeholder {
+            width: 160px;
+            height: 160px;
+            background-color: #cbd5e0;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            color: #718096; /* Medium gray */
             margin: 0 auto;
             overflow: hidden;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
         .icon-placeholder img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        /* Custom scrollbar for a more modern look */
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -73,12 +76,12 @@
     <header class="hero-section text-white py-16 md:py-24">
         <div class="container mx-auto px-6 text-center">
             <div class="icon-placeholder mb-8">
-                <img src="http://sergio-nm.com/yoii.png" alt="Sergio Nieto Moyano">
+                <img src="yoii.png" alt="Sergio Nieto Moyano">
             </div>
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Sergio Nieto Moyano</h1>
             <p class="text-xl md:text-2xl font-light mb-2">Director de Marketing</p>
             <p class="text-lg md:text-xl font-light max-w-3xl mx-auto">
-                Con experiencia destacada en Inteligencia Artificial aplicada al Marketing para impulsar estrategias innovadoras y resultados medibles.
+                Especialista en potenciar resultados de negocio mediante Inteligencia Artificial y liderazgo de proyectos estratégicos de alto impacto.
             </p>
         </div>
     </header>
@@ -89,73 +92,102 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="card p-6 border-t-4 border-blue-500">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Generación de Leads y Prospección Adaptativa</h3>
-                    <p class="text-gray-600 mb-4">
-                        Desarrollo de metodologías basadas en IA para identificar y captar clientes potenciales, personalizando la búsqueda según la naturaleza de cada producto, servicio o proyecto.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                        <li>Creación de flujos de trabajo inteligentes para el filtrado y cualificación de leads.</li>
-                        <li>Adaptación dinámica de criterios de búsqueda según el nicho de mercado.</li>
-                        <li>Optimización de estrategias de <i>outreach</i> mediante personalización masiva con IA.</li>
-                    </ul>
-                    <span class="tag">Lead Gen</span> <span class="tag">Prospección IA</span> <span class="tag">B2B</span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Generación de Leads y Prospección Adaptativa</h3>
+                        <p class="text-gray-600 mb-4">
+                            Desarrollo de sistemas inteligentes para identificar y captar leads cualificados, ajustando la búsqueda según la naturaleza de cada producto o proyecto.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                            <li>Flujos de trabajo para filtrado de clientes ideales (ICP).</li>
+                            <li>Adaptación dinámica según el nicho de mercado.</li>
+                            <li>Personalización masiva de outreach mediante IA.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="tag">Lead Gen</span> <span class="tag">Prospección IA</span>
+                    </div>
                 </div>
 
                 <div class="card p-6">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Investigación y Análisis de Mercado con IA</h3>
-                    <p class="text-gray-600 mb-4">
-                        Utilización avanzada de herramientas como Google Advanced, ChatGPT, DeepSeek y soluciones de Microsoft para realizar análisis de mercado profundos y estratégicos.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                        <li>Ejecución de estudios específicos sobre empresas del sector de viajes de lujo.</li>
-                        <li>Investigaciones clave sobre empresas internacionales.</li>
-                        <li>Obtención de insights críticos para evaluar viabilidad.</li>
-                    </ul>
-                    <span class="tag">Análisis de Mercado</span> <span class="tag">IA Estratégica</span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Investigación y Análisis de Mercado con IA</h3>
+                        <p class="text-gray-600 mb-4">
+                            Uso avanzado de Google Advanced, ChatGPT y DeepSeek para realizar análisis estratégicos profundos y evaluar viabilidad de proyectos.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                            <li>Estudios de sector lujo y viajes.</li>
+                            <li>Análisis de competidores internacionales.</li>
+                            <li>Obtención de insights críticos para la toma de decisiones.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="tag">Análisis</span> <span class="tag">DeepSeek</span>
+                    </div>
                 </div>
 
                 <div class="card p-6">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Definición y Propuesta de Proyectos Estratégicos</h3>
-                    <p class="text-gray-600 mb-4">
-                        Habilidad para conceptualizar y estructurar proyectos innovadores desde la fase inicial hasta la propuesta final, liderando iniciativas estratégicas internas.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                        <li>Definición de objetivos medibles (KPIs).</li>
-                        <li>Diseño de propuesta de valor y fases del proyecto.</li>
-                        <li>Elaboración de documentación estratégica.</li>
-                    </ul>
-                    <span class="tag">Gestión de Proyectos</span> <span class="tag">Estrategia</span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Definición de Proyectos Estratégicos</h3>
+                        <p class="text-gray-600 mb-4">
+                            Conceptualización y estructuración de proyectos innovadores, liderando el ciclo completo desde la idea hasta la ejecución final.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                            <li>Definición de KPIs y objetivos medibles.</li>
+                            <li>Diseño de propuestas de valor únicas.</li>
+                            <li>Planificación de fases estratégicas.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="tag">Estrategia</span> <span class="tag">Liderazgo</span>
+                    </div>
                 </div>
 
                 <div class="card p-6">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Marketing Digital y Creación Automatizada</h3>
-                    <p class="text-gray-600 mb-4">
-                        Implementación de IA para automatizar y personalizar la creación de contenidos, manteniendo a la empresa a la vanguardia tecnológica.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                        <li>Análisis predictivo aplicado a estrategias digitales.</li>
-                        <li>Incremento del engagement y mejora de la experiencia de cliente.</li>
-                    </ul>
-                    <span class="tag">Marketing Digital</span> <span class="tag">IA Creativa</span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Marketing Digital y Automatización</h3>
+                        <p class="text-gray-600 mb-4">
+                            Implementación de IA para automatizar la creación de contenidos personalizados, optimizando el engagement y la experiencia del cliente.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                            <li>Análisis predictivo en estrategias digitales.</li>
+                            <li>Automatización de flujos de contenido.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="tag">Automatización</span> <span class="tag">IA Creativa</span>
+                    </div>
                 </div>
 
                 <div class="card p-6">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Optimización de Procesos Internos</h3>
-                    <p class="text-gray-600 mb-4">
-                        Estructuración eficiente de información interna mediante IA, mejorando la productividad y efectividad en procesos operativos.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
-                        <li>Uso constante de herramientas de IA para optimizar la planificación estratégica.</li>
-                    </ul>
-                    <span class="tag">Productividad</span> <span class="tag">Gestión IA</span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Optimización de Procesos Internos</h3>
+                        <p class="text-gray-600 mb-4">
+                            Estructuración de información y mejora de la productividad operativa mediante herramientas de IA integradas en el día a día.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                            <li>Mejora de efectividad en procesos creativos.</li>
+                            <li>Gestión eficiente del conocimiento interno.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="tag">Productividad</span> <span class="tag">Gestión</span>
+                    </div>
                 </div>
 
                 <div class="card p-6">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Creación Audiovisual y Multimedia</h3>
-                    <p class="text-gray-600 mb-4">
-                        Integración sistemática de IA para facilitar el proceso creativo y técnico en la producción de contenidos para YouTube.
-                    </p>
-                    <span class="tag">Contenido Multimedia</span> <span class="tag">YouTube</span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Creación Audiovisual con IA</h3>
+                        <p class="text-gray-600 mb-4">
+                            Integración de IA en la producción y edición de contenidos multimedia para YouTube, optimizando calidad y tiempos de entrega.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+                            <li>Edición técnica potenciada por IA.</li>
+                            <li>Gestión de contenidos multimedia.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="tag">YouTube</span> <span class="tag">Multimedia</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -163,16 +195,14 @@
         <section id="contacto" class="text-center py-12 bg-white rounded-lg shadow-lg">
              <h2 class="text-3xl font-bold section-title mb-6">¿Hablamos?</h2>
              <p class="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
-                 Si estás buscando innovar en tus estrategias de marketing con IA o tienes algún proyecto en mente, no dudes en contactarme.
+                 Si buscas innovar en tus estrategias de marketing con IA o tienes un proyecto en mente, estaré encantado de colaborar.
              </p>
              <a href="mailto:sergionietomoyano@gmail.com"
                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-300 ease-in-out shadow-md hover:shadow-lg">
                  Contactar por Email
              </a>
-             <p class="mt-4 text-sm text-gray-500 font-medium italic">Poseo Certificado de discapacidad</p>
-             <p class="mt-2 text-sm text-gray-500">
-                sergionietomoyano@gmail.com
-             </p>
+             <p class="mt-6 text-sm text-gray-500 font-medium italic">Poseo Certificado de discapacidad</p>
+             <p class="text-sm text-gray-400 mt-1">sergionietomoyano@gmail.com</p>
         </section>
     </main>
 
